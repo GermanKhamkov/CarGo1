@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarGo</title>
+<link rel="stylesheet" href="./project.css">
+<body>
+ <!-- Навигация -->
+<nav>
+<div class="container nav-container">
+<a href="project.html" class="logo">CarGo</a>
+<ul class="nav-links">
+<li><a href="#car-rental-terms" target="_self">Что нужно знать</a></li>
+<li><a href="#booking" class="active">Бронирование</a></li>
+<li><a href="form.html">Контакты</a></li>
+<li><a href="dom_js.html">DOM/JS</a></li>
+</ul>
+</div>
+</nav>
+<!-- Преимущества -->
+<div id="advantages" class="nested-list">
+<h2>Наши преимущества</h2>
+<ul class="style-adv">
+    <li> Многоязычная поддержка:
+    <ul> 
+        <li class="style-lang"> Русский </li>
+         <li class="style-lang">Английский </li>
+         <li class="style-lang">Китайский</li>
+    </ul>
+    </li>
+    <li> Бесплатная отмена за 24 часа</li>
+    <li> Полная бесплатная страховка </li>
+    <li> Новые автомобили последних моделей </li>
+</ul>
+</div>
+<!-- Как арендовать автомобиль -->
+ <section id="car-rental-terms" class="nested-list">
+<h2>Как арендовать автомобиль</h2>
+ <ol>
+    <li>Выберите подходящий автомобиль из нашего автопарка</li>
+    <li>Заполните форму бронирования онлайн</li>
+    <li>Получите автомобиль в указанном месте</li>
+    <li>Наслаждайтесь поездкой!</li>
+</ol>
+</section>
+ <div id="requirements">
+<h3> Требования к арендатору</h3>
+<div class="nested-list">
+<ol>
+    <li>Основные требования
+        <ul>
+            <li>Возрастные ограничения
+                <ul>
+                    <li>Минимальный возраст: 21 год</li>
+                    <li>Для премиум-класса: от 25 лет</li>
+                </ul>
+            </li>
+                <li>Водительский стаж
+                    <ul>
+                        <li>Общий стаж: от 2 лет
+                            <ul>
+                                <li>Для эконом-класса: от 1 года</li>
+                                <li>Для премиум-класса: от 3 лет</li>
+                            </ul>
+                        </li>
+                    </ul>
+            </li>
+        </ul>
+    </li>
+</ol>
+</div>
+</div>
+<table align="center" cellspacing = "0" cellpadding = "5" border="1" width="100px" background="neon.jpg"
+<tbody> 
+    <tr>
+        <td colspan="1" align="center" height="50px" float="margin-right">
+            <strong> Hyundai Solaris </strong>
+        </td>
+    </tr>
+    <tr> 
+        <td height = "200px" width = "10px" background="neon.jpg"> 
+        На 5 человек 
+        </td>
+        <td width=40px background="../hyundai-solaris.jpg">
+        <a href="https://www.avtogermes.ru/sale/hyundai/solaris/tth/" target="_blank"></a>"
+        <img src="hyundai-solaris">
+        </td>
+        <td width="5px" background="neon.jpg">
+        Для самых бережливых
+        </td>
+    </tr>
+    <tr>
+        <td align="center" valign="top" colspan="3" height="100px"> 
+        <a href="https://mbrus.ru/passengercars/mercedes-benz-cars/models/s-class/saloon-wv223/specifications/" target="_blank">
+        Подробная характеристика машины
+        </a>
+        </td>
+    </tr>
+
+<table align="center" cellspacing = "0" cellpadding = "10" border="1" width="1000px" background="neon.jpg"
+<tbody> 
+    <tr>
+        <td colspan="3" align="center" height="50px">
+            <strong> Mercedes Benz s500</strong>
+        </td>
+    </tr>
+    <tr> 
+        <td height = "150px" width = "160px" background="neon.jpg"> 
+        На 4 человека 
+        </td>
+        <td width=60px background="../s-class.jpg">
+        <a href="https://mbrus.ru/passengercars/mercedes-benz-cars/models/s-class/saloon-wv223/specifications/" target="_blank"></a>"
+        <img src="mercedes-benz-cars">
+        </td>
+        <td width="50px" background="neon.jpg">
+        Для любителей комфорта
+        </td>
+    </tr>
+    <tr>
+        <td align="center" valign="top" colspan="3" height="100px"> 
+        <a href="https://mbrus.ru/passengercars/mercedes-benz-cars/models/s-class/saloon-wv223/specifications/" target="_blank">
+        Подробная характеристика машины
+        </a>
+        </td>
+    </tr>
+</tbody>
+</table>
+<!-- Форма бронирования -->
+            <section id="booking" class="section">
+                <h2>Форма бронирования автомобиля</h2>
+                <form action="https://google.com" target="_blank" method="get">
+                    <input type="hidden" name="form_type" value="booking">
+                    
+                    <div class="form-group">
+                        <label for="car_model">Модель автомобиля:</label>
+                        <input type="text" id="car_model" name="car_model" value="Toyota Camry">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="rental_days">Количество дней аренды:</label>
+                        <input type="number" id="rental_days" name="rental_days" value="3" min="1">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Место получения:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="office" name="pickup_location" value="office" checked>
+                            <label for="office" style="display: inline;">В указанной Вами точке</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="airport" name="pickup_location" value="airport">
+                            <label for="airport" style="display: inline;">Самовывозом из хаба</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Дополнительные услуги:</label>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="child_seat" name="additional_services" value="child_seat">
+                            <label for="child_seat" style="display: inline;">Детское кресло</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="gps" name="additional_services" value="gps">
+                            <label for="gps" style="display: inline;">напитки и снэки</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="start_date">Дата начала аренды:</label>
+                        <input type="date" id="start_date" name="start_date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="client_password">Пароль для доступа:</label>
+                        <input type="password" id="client_password" name="client_password" required>
+                    </div>
+                    
+                    <button type="submit" class="btn">Забронировать</button>
+                </form>
+            </section>
+        </div>
+    </div>
